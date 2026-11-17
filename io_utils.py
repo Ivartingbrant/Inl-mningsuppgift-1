@@ -1,6 +1,7 @@
 import pandas as pd
-import numpy as np
 
-df = pd.read_csv("data/health_study_dataset.csv")
+def load_data(data):
+    """Läser in csv filen med data och returnerar dataframe"""
+    return pd.read_csv(data)
 
-df.info()
+
